@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tailwind + JS</title>
+</head>
+<body>
+    <form class="container mx-auto mt-[16px] border border-violet-800 flex flex-col items-center bg-white rounded-xl shadow-lg gap-4 py-4" onsubmit="verificarNumero(event)">
+
+        <h1 class="text-2xl">Formulário</h1>
+
+        <div class="flex flex-col">
+            <label for="valor">Número</label>
+            <input id="valor" name="valor" class="border border-violet-800 rounded shadow" type="number" step="0.01">
+        </div>
+
+        <button class="border border-violet-800 rounded shadow bg-violet-300 p-2 hover:bg-violet-400 font-semibold">Verificar</button>
+
+        <h3 id="display">Mensagem</h3>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
